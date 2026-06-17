@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Trey Roberts</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <style>
+    :root {
+      --navy: #1a2744;
+      --gold: #c9993a;
+      --light: #f8f6f1;
+      --mid: #e8e3d9;
+      --text: #2c2c2c;
+    }
+    body { font-family: 'Inter', sans-serif; background: var(--light); color: var(--text); }
+    .navbar { background: var(--navy) !important; }
+    .navbar-brand { font-family: 'Playfair Display', serif; color: var(--gold) !important; font-size: 1.4rem; }
+    .nav-link { color: rgba(255,255,255,0.85) !important; font-size: 0.9rem; letter-spacing: 0.04em; }
+    .nav-link:hover, .nav-link.active { color: var(--gold) !important; }
+    .hero { background: var(--navy); color: white; padding: 80px 0 60px; text-align: center; }
+    .hero h1 { font-family: 'Playfair Display', serif; font-size: 3.2rem; color: var(--gold); margin-bottom: 0.3rem; }
+    .hero .subtitle { font-size: 1.05rem; font-weight: 300; color: rgba(255,255,255,0.75); letter-spacing: 0.08em; text-transform: uppercase; }
+    .hero .tagline { margin-top: 1.2rem; font-size: 1rem; color: rgba(255,255,255,0.6); max-width: 550px; margin-left: auto; margin-right: auto; }
+    .section-label { font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); font-weight: 600; margin-bottom: 0.4rem; }
+    .section-title { font-family: 'Playfair Display', serif; font-size: 1.9rem; color: var(--navy); margin-bottom: 1.5rem; }
+    .divider { border-top: 2px solid var(--gold); width: 48px; margin: 0.6rem 0 1.5rem; }
+    .resume-section { padding: 60px 0; }
+    .resume-section.alt { background: var(--mid); }
+    .resume-item { margin-bottom: 2rem; }
+    .resume-item h5 { font-weight: 600; color: var(--navy); margin-bottom: 0.1rem; font-size: 1rem; }
+    .resume-item .org { color: var(--gold); font-size: 0.88rem; font-weight: 500; }
+    .resume-item .dates { font-size: 0.8rem; color: #888; margin-bottom: 0.5rem; }
+    .resume-item ul { padding-left: 1.2rem; font-size: 0.9rem; color: #444; }
+    .resume-item ul li { margin-bottom: 0.25rem; }
+    .skill-pill { display: inline-block; background: var(--navy); color: white; border-radius: 50px; padding: 0.35rem 1rem; font-size: 0.82rem; margin: 0.3rem; }
+    .objective-box { background: white; border-left: 4px solid var(--gold); padding: 1.4rem 1.8rem; border-radius: 0 8px 8px 0; font-size: 0.95rem; line-height: 1.7; color: #444; }
+    footer { background: var(--navy); color: rgba(255,255,255,0.5); text-align: center; padding: 1.5rem; font-size: 0.82rem; }
+  </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Trey Roberts</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto gap-2">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="scratch.html">Country Music</a></li>
+        <li class="nav-item"><a class="nav-link" href="filmroom.html">Film Room</a></li>
+        <li class="nav-item"><a class="nav-link" href="dataviz.html">Data Viz</a></li>
+        <li class="nav-item"><a class="nav-link" href="trivia.html">Trivia</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="container">
+    <h1>Trey Lance Roberts</h1>
+    <p class="subtitle">Business Management · Pre-Dental · BYU</p>
+    <p class="tagline">Future orthodontist. Former team captain. Fluent in Spanish. Passionate about people.</p>
+  </div>
+</section>
+
+<section class="resume-section">
+  <div class="container" style="max-width:800px;">
+    <p class="section-label">About Me</p>
+    <h2 class="section-title">Objective</h2>
+    <div class="divider"></div>
+    <div class="objective-box">
+      Motivated student pursuing Business Management at Brigham Young University with strong leadership experience, fluent in Spanish, and a proven track record of teamwork, organization, and communication. Seeking opportunities to excel while preparing for dental school and a future career as an orthodontist.
+    </div>
+  </div>
+</section>
+
+<section class="resume-section alt">
+  <div class="container" style="max-width:800px;">
+    <p class="section-label">Academic Background</p>
+    <h2 class="section-title">Education</h2>
+    <div class="divider"></div>
+    <div class="resume-item">
+      <h5>Brigham Young University — Provo, UT</h5>
+      <div class="org">B.S. Business Management (Pre-Dental)</div>
+      <div class="dates">Fall 2025 – Present</div>
+    </div>
+    <div class="resume-item">
+      <h5>American Fork High School — American Fork, UT</h5>
+      <div class="org">High School Diploma · GPA: 3.9</div>
+      <div class="dates">Graduated 2023</div>
+    </div>
+  </div>
+</section>
+
+<section class="resume-section">
+  <div class="container" style="max-width:800px;">
+    <p class="section-label">Work History</p>
+    <h2 class="section-title">Experience</h2>
+    <div class="divider"></div>
+    <div class="resume-item">
+      <h5>Intern — Smile Perfect Orthodontics</h5>
+      <div class="org">Orthodontic Practice</div>
+      <div class="dates">7 Months</div>
+      <ul>
+        <li>Observed and assisted with orthodontic procedures and patient care.</li>
+        <li>Gained hands-on exposure to clinical workflows, treatments, and office operations.</li>
+        <li>Strengthened interest in orthodontics through direct mentorship and learning.</li>
+      </ul>
+    </div>
+    <div class="resume-item">
+      <h5>Missionary — The Church of Jesus Christ of Latter-day Saints</h5>
+      <div class="org">Full-Time Service</div>
+      <div class="dates">2023 – 2025</div>
+      <ul>
+        <li>Served in multiple leadership positions overseeing missionaries and coordinating meetings.</li>
+        <li>Achieved fluency in Spanish while serving and teaching full-time.</li>
+        <li>Developed strong communication, teaching, and collaboration skills in diverse environments.</li>
+        <li>Led training meetings to improve performance and unity among missionaries.</li>
+      </ul>
+    </div>
+    <div class="resume-item">
+      <h5>Employee — MF9</h5>
+      <div class="org">American Fork, UT</div>
+      <div class="dates">2021 – 2023</div>
+      <ul>
+        <li>Built a strong work ethic and sense of responsibility throughout junior and senior years.</li>
+        <li>Demonstrated reliability, adaptability, and consistent performance.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="resume-section alt">
+  <div class="container" style="max-width:800px;">
+    <p class="section-label">Leadership</p>
+    <h2 class="section-title">Leadership &amp; Activities</h2>
+    <div class="divider"></div>
+    <div class="resume-item">
+      <h5>Varsity Football Team Captain — American Fork High School</h5>
+      <div class="org">American Fork Cavemen Football</div>
+      <div class="dates">2022 – 2023</div>
+      <ul>
+        <li>Led the team as a senior, fostering teamwork and discipline on and off the field.</li>
+        <li>Earned <strong>1st Team All-State honors</strong> in both junior and senior years.</li>
+        <li>Mentored teammates in communication, motivation, and developing lifelong habits.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="resume-section">
+  <div class="container" style="max-width:800px;">
+    <p class="section-label">Competencies</p>
+    <h2 class="section-title">Skills</h2>
+    <div class="divider"></div>
+    <div>
+      <span class="skill-pill">Teamwork &amp; Collaboration</span>
+      <span class="skill-pill">Communication</span>
+      <span class="skill-pill">Fluent in Spanish</span>
+      <span class="skill-pill">Leadership</span>
+      <span class="skill-pill">Organization &amp; Time Management</span>
+      <span class="skill-pill">Active Listening</span>
+      <span class="skill-pill">Strong Work Ethic</span>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p class="mb-0">&copy; 2025 Trey Lance Roberts &middot; treylanceroberts@gmail.com &middot; 801-822-8882</p>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
